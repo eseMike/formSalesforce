@@ -1,0 +1,277 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(./src/mobile.png);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(./src/desk.jpg);
+  }
+}
+body .main-container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+body .first {
+  margin-top: 6rem;
+  display: flex;
+  gap: initial;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  body .first {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+body .first div h3 {
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  body .first div h3 {
+    font-size: 41.82px;
+  }
+}
+body .first div .porcent {
+  color: #d9d9d9;
+  text-align: center;
+  font-style: normal;
+  font-weight: 750;
+  display: block;
+  font-size: 100px;
+  margin-top: 35px;
+}
+@media (min-width: 768px) {
+  body .first div .porcent {
+    font-size: 219.71px;
+    margin-top: 82px;
+  }
+}
+body .first div .txtPorcet {
+  color: #fff;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  body .first div .txtPorcet {
+    font-size: 44px;
+  }
+}
+body .first .mainLogo {
+  width: 341px;
+}
+@media (min-width: 768px) {
+  body .first .mainLogo {
+    width: initial;
+  }
+}
+
+.form-container {
+  padding: initial;
+  border-radius: 10px;
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-form label {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.custom-form input,
+.custom-form button {
+  width: auto;
+}
+@media (min-width: 768px) {
+  .custom-form input,
+  .custom-form button {
+    width: 400px;
+    max-width: 500px;
+  }
+}
+
+.custom-form input {
+  height: 53.53px;
+  border-radius: 15.744px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4.723px 4.723px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 14px;
+}
+
+.custom-form input::-moz-placeholder {
+  color: #ccc;
+}
+
+.custom-form input::placeholder {
+  color: #ccc;
+}
+
+.custom-form button {
+  height: 55px;
+  padding: 0px 113.424px;
+  border-radius: 15.743px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  color: #201515;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 23.616px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62.615px; /* 265.138% */
+}
+@media (min-width: 768px) {
+  .custom-form button {
+    height: 73px;
+  }
+}
+
+.custom-form button:hover {
+  background: #ccc;
+}
+
+.brand-section {
+  text-align: center;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .brand-section {
+    padding: 20px 0;
+  }
+}
+.brand-section .brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos {
+    gap: 15px;
+  }
+}
+.brand-section .brand-logos img {
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.brand-section .brand-logos img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.brand-section .brand-logos .separator {
+  height: 30px;
+  width: 1px;
+  background-color: #fff;
+}
+.brand-section .brand-logos .boss {
+  width: 30.341px;
+  height: 8.154px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos .boss {
+    width: 101.138px;
+    height: 27.178px;
+  }
+}
+.brand-section .brand-logos .boggi {
+  width: 30.111px;
+  height: 9.753px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos .boggi {
+    width: 100.37px;
+    height: 32.511px;
+  }
+}
+.brand-section .brand-logos .cloth {
+  width: 52.376px;
+  height: 12.746px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos .cloth {
+    width: 174.585px;
+    height: 42.486px;
+  }
+}
+.brand-section .brand-logos .canali {
+  width: 42.455px;
+  height: 9.866px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos .canali {
+    width: 141.517px;
+    height: 32.887px;
+  }
+}
+.brand-section .brand-logos .calde {
+  width: 73.781px;
+  height: 6.214px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos .calde {
+    width: 245.936px;
+    height: 20.713px;
+  }
+}
+.brand-section .brand-logos .bugatchi {
+  width: 52.546px;
+  height: 6.222px;
+}
+@media (min-width: 768px) {
+  .brand-section .brand-logos .bugatchi {
+    width: 175.152px;
+    height: 20.739px;
+  }
+}
+.brand-section .legal-text {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #ccc;
+}
+@media (min-width: 768px) {
+  .brand-section .legal-text {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=styles.css.map */
